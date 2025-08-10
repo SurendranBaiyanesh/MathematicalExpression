@@ -66,7 +66,7 @@ namespace MathematicalExpression
 
         private string ReplaceDivideWithCalculatedValue(string strExpression)
         {
-            string strPattern = @"\b\d{1,3}\s*/\s*\d{1,3}\b";
+            string strPattern = @"\b\d\s*/\s*\d\b";
 
             MatchCollection regexMatches = Regex.Matches(strExpression, strPattern);
 
